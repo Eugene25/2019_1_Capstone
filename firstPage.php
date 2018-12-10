@@ -28,15 +28,42 @@
 
 
 
-	<div>
-	<a href="./clic_first.php">
-	<img id="menuImg" src="../img/compamigo.png" alt="abclic"></img></a>
+	<!--div>
+		<a href="./clic_first.php"><img id="menuImg" src="../img/compamigo.png" alt="abclic"></img></a>
+
+	<?php if($loginState == 1) { ?>
+
+			<div class="dropdown">
+			<a  id ="firstMenu" href="../src/intro.php?pageOption=1">Compamigo</a>
+			<div class="dropdown-content">
+    				<a href="../src/intro.php?pageOption=1">What is Compamigo</a>
+    				<a href="../src/intro.php?pageOption=2">How it works</a>
+  			</div>
+			</div>
+
+			<a id ="firstMenu" href="../src/search.php?searchMode='false'">Search</a>
+			<a id ="firstMenu" href="../src/community.php">Community</a>
+
+<div  id="menuIconImg" class="dropdown">
+  <img id="menuIconImg" src="../img/icon/menu.png" alt="abclic">
+  <div class="dropdown-content">
+			<a id ="firstSmallMenu" href="../src/intro.php?pageOption=1">Compamigo</a>
+			<a id ="firstSmallMenu" href="../src/search.php?searchMode='false'">Search</a>
+			<a id ="firstSmallMenu" href="../src/community.php">Community</a>
+  </div>
+</div>
+
+	
+	<button id="sign" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">sign in</button> 
+	
+	<?php } else { ?>
+
 			<a id ="firstMenu" href="../src/new_voca.php">Vocabulary Note</a>
 			<a id ="firstMenu" href="../src/my_note.php">My Voca Note</a>
 			<a id ="firstMenu" href="../src/search.php?searchMode='false'">Search</a>
 			<a id ="firstMenu" href="../src/voca.php">Extraction</a>
 			<a id ="firstMenu" href="../src/voca.php">Study</a>
-			<a id ="firstMenu" href="../src/voca.php">Community</a>
+			<a id ="firstMenu" href="../src/community.php">Community</a>
 
 <div  id="menuIconImg" class="dropdown">
   <img id="menuIconImg" src="../img/icon/menu.png" alt="abclic">
@@ -46,19 +73,16 @@
 <a id ="firstSmallMenu" href="../src/search.php?searchMode='false'">Search</a>
 <a id ="firstSmallMenu" href="../src/voca.php">Extraction</a>
 <a id ="firstSmallMenu" href="../src/voca.php">Study</a>
-<a id ="firstSmallMenu" href="../src/voca.php">Community</a>
+<a id ="firstSmallMenu" href="../src/community.php">Community</a>
   </div>
 </div>
-	
-	<?php echo $user_id ?>
 
-	<?php if($loginState == 1) { ?>
-	<button id="sign" type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">sign in</button> 
-	<?php } else { ?>
+	<?php echo $user_id ?>
 	<a href="../process/logout.php" id="sign"  class="btn btn-info" active" role="button" aria-pressed="true">log out</a>
+	
 	<?php } ?>
 
-	</div>
+	</div-->
 
 
 	<div id="start1">
